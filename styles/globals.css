@@ -1,26 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.bg-itemShade {
+    background-image: linear-gradient(136deg, rgba(49, 43, 71, 0.5294117647058824), transparent);
+}
+
+.bg-rarityFifth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(200, 124, 36, var(--tw-bg-opacity));
+}
+
+.bg-rarityFourth {
+    --tw-bg-opacity: 1;
+    background-color: rgba(148, 112, 187, var(--tw-bg-opacity));
+}
+
+.drop-shadow-special {
+    --tw-drop-shadow: drop-shadow(#e3721b 0px 0px 1px);
+}
+
+.text-amberStarYellow {
+    --tw-text-opacity: 1;
+    color: rgba(255, 204, 50, var(--tw-text-opacity));
+}
+
+.bg-itemBGR {
+    background-image: linear-gradient(0deg, #e9e5dc, 10rem, transparent);
+}
+
+.text-amberBlack {
+    --tw-text-opacity: 1;
+    color: rgba(74, 83, 102, var(--tw-text-opacity));
+}
+
+.amberHover {
+    border: none;
 }
