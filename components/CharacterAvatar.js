@@ -12,7 +12,7 @@ export function CharacterAvatar({ id, name, element, rarity }) {
                     >
                         <span>
                             <img
-                                src={`/images/element/color/${element}.png`}
+                                src={`/images/element/color/${element.toLowerCase()}.png`}
                                 alt="Effect Icon"
                                 className="absolute top-1 left-1 w-8"
                             />
@@ -22,7 +22,7 @@ export function CharacterAvatar({ id, name, element, rarity }) {
                                 className="h-24 rounded-t-lg rounded-br-3xl md:h-32 lg:h-32 xl:h-32"
                             />
                         </span>
-                        <div className="absolute top-20.3 flex flex-row md:top-28 lg:top-28 xl:top-28">
+                        <div className="absolute top-[5.4rem] flex flex-row md:top-28 lg:top-28 xl:top-28">
                             <Star number={rarity} />
                         </div>
                     </div>

@@ -12,7 +12,7 @@ import Link from 'next/link';
 
 export default function Characters({ characters, charactersElement }) {
     const trans = useTrans();
-    // console.log(characters);
+    console.log(charactersElement);
     return (
         <>
             <Head>
